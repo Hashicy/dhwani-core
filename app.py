@@ -106,13 +106,27 @@ footer { visibility: hidden; }
 }
 
 /* ── File uploader ── */
-[data-testid="stFileUploadDropzone"] {
+[data-testid="stFileUploaderDropzone"] {
     background: rgba(12,18,40,.7) !important;
     border: 1.5px dashed rgba(56,189,248,.2) !important;
     border-radius: 12px !important;
 }
-[data-testid="stFileUploadDropzone"]:hover {
+[data-testid="stFileUploaderDropzone"]:hover {
     border-color: rgba(56,189,248,.6) !important;
+}
+[data-testid="stFileUploaderDropzone"] * {
+    color: #8899bb !important;
+}
+[data-testid="stFileUploaderDropzone"] button {
+    background: rgba(20,30,55,.7) !important;
+    border: 1px solid rgba(100,120,200,.25) !important;
+    color: #8899bb !important;
+    border-radius: 10px !important;
+}
+[data-testid="stFileUploaderDropzone"] button:hover {
+    background: rgba(100,120,200,.18) !important;
+    border-color: rgba(129,140,248,.6) !important;
+    color: #e2e8f0 !important;
 }
 
 /* ── Streamlit native pyplot container – kill white bg ── */
