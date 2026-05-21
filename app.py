@@ -48,7 +48,6 @@ st.markdown("""
     font-family: 'Inter', sans-serif !important;
     box-sizing: border-box;
 }
-[data-testid="stAppViewContainer"] { background: #070b18 !important; }
 [data-testid="stHeader"]           { background: transparent !important; }
 section.main > div.block-container {
     padding-top: 1.5rem !important;
@@ -103,30 +102,6 @@ footer { visibility: hidden; }
     border-color: rgba(129,140,248,.6) !important;
     color: #e2e8f0 !important;
     transform: translateY(-1px) !important;
-}
-
-/* ── File uploader ── */
-[data-testid="stFileUploaderDropzone"] {
-    background: rgba(12,18,40,.7) !important;
-    border: 1.5px dashed rgba(56,189,248,.2) !important;
-    border-radius: 12px !important;
-}
-[data-testid="stFileUploaderDropzone"]:hover {
-    border-color: rgba(56,189,248,.6) !important;
-}
-[data-testid="stFileUploaderDropzone"] * {
-    color: #8899bb !important;
-}
-[data-testid="stFileUploaderDropzone"] button {
-    background: rgba(20,30,55,.7) !important;
-    border: 1px solid rgba(100,120,200,.25) !important;
-    color: #8899bb !important;
-    border-radius: 10px !important;
-}
-[data-testid="stFileUploaderDropzone"] button:hover {
-    background: rgba(100,120,200,.18) !important;
-    border-color: rgba(129,140,248,.6) !important;
-    color: #e2e8f0 !important;
 }
 
 /* ── Streamlit native pyplot container – kill white bg ── */
@@ -215,8 +190,7 @@ _, mid, _ = st.columns([1, 2.2, 1])
 with mid:
     uploaded_file = st.file_uploader(
         "Drop an audio file here or click to browse",
-        type=["wav", "mp3", "flac", "ogg", "m4a", "aac", "wma"],
-        label_visibility="collapsed"
+        type=["wav", "mp3", "flac", "ogg", "m4a", "aac", "wma"]
     )
     st.markdown(
         "<p style='text-align:center;color:#1e2d42;font-size:.78rem;"
