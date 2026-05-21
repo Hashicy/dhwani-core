@@ -43,11 +43,9 @@ SAMPLES = {
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+[class^="dw-"] { font-family: 'Inter', sans-serif; }
 
-*, *::before, *::after {
-    font-family: 'Inter', sans-serif !important;
-    box-sizing: border-box;
-}
+
 [data-testid="stHeader"]           { background: transparent !important; }
 section.main > div.block-container {
     padding-top: 1.5rem !important;
