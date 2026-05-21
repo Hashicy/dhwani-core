@@ -1,7 +1,7 @@
 streamlit
-librosa
+librosa<0.11.0
 soundfile
-numpy
+numpy<2.0.0
 joblib
 matplotlib
 scikit-learn==1.6.1
